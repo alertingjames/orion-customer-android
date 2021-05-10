@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/men"
+        android:title="MEN"
+        android:icon="@drawable/ic_male"
+        android:showAsAction="always"
+        android:onClick="setGender"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/women"
+        android:title="WOMEN"
+        android:icon="@drawable/ic_female"
+        android:showAsAction="always"
+        android:onClick="setGender"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/unisex"
+        android:title="UNISEX"
+        android:icon="@drawable/ic_unisex"
+        android:showAsAction="always"
+        android:onClick="setGender"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/kids"
+        android:title="KIDS"
+        android:icon="@drawable/ic_kids"
+        android:showAsAction="always"
+        android:onClick="setGender"
+        tools:ignore="AppCompatResource" />
+</menu>

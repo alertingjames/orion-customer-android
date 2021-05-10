@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity"
+    tools:context=".main.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/toolbar_shadow">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:onClick="back"
+                android:src="@drawable/ic_left"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Filter"/>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/priceRangeCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Range"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/minVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:text="0"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="5dp"
+                            android:text="SGD"/>
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/maxVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:text="1k"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14sp"
+                            android:text="SGD"/>
+                    </LinearLayout>
+                    <io.apptik.widget.MultiSlider
+                        android:id="@+id/range_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:thumbColor="@color/green"
+                        app:trackColor="@color/green"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sortCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sort By"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Price"/>
+
+                        <TextView
+                            android:id="@+id/price_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/green"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:onClick="priceUp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/green_round_stroke"
+                            android:drawableRight="@drawable/ic_up_arrow"
+                            android:text="Price"/>
+
+                        <TextView
+                            android:id="@+id/price_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/green"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:onClick="priceDown"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/green_round_stroke"
+                            android:drawableRight="@drawable/ic_down_arrow"
+                            android:text="Price"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Name"/>
+
+                        <TextView
+                            android:id="@+id/name_ascending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/green"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:onClick="nameAsc"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/green_round_stroke"
+                            android:drawableRight="@drawable/ic_up_arrow"
+                            android:text="A -> Z"/>
+
+                        <TextView
+                            android:id="@+id/name_descending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/green"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:onClick="nameDesc"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/green_round_stroke"
+                            android:drawableRight="@drawable/ic_down_arrow"
+                            android:text="Z -> A"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/unSaveButton"
+                        android:layout_width="150dp"
+                        android:layout_height="65dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:onClick="unSaveFilter"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/circular_shadow"
+                        android:text="Don't Apply"/>
+
+                    <TextView
+                        android:id="@+id/saveButton"
+                        android:layout_width="150dp"
+                        android:layout_height="65dp"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:onClick="saveFilter"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_shadow"
+                        android:text="Apply"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

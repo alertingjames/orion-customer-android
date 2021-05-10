@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rect_fill">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_alert_header">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Place feedback"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="3dp"
+                android:src="@drawable/cancelicon"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/productPicture"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="5dp"/>
+                <RatingBar
+                    android:id="@+id/ratingbar0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="0.0"
+                    android:stepSize="0.1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:max="5"
+                    android:numStars="5"
+                    android:isIndicator="true"
+                    android:layout_gravity="center_vertical"
+                    android:progressTint="#FFC107"
+                    android:secondaryProgressTint="#ccb59e"/>
+                <TextView
+                    android:id="@+id/ratings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:hint="0.0"/>
+                <TextView
+                    android:id="@+id/lb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Reviews"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:max="5"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="false"
+                android:progressTint="#FFC107"/>
+
+            <TextView
+                android:id="@+id/ratingBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textSize="18sp"
+                android:textColor="#282828"
+                android:gravity="center"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/feedbackBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="200dp"
+                    android:padding="15dp"
+                    android:minLines="3"
+                    android:background="@drawable/gray_round_stroke"
+                    android:hint="Write your feedback..."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:gravity="start"/>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="SUBMIT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

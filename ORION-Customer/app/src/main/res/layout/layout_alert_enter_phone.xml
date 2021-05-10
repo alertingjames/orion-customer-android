@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rect_fill">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_alert_header">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_phone"
+                android:tint="@color/white"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Add Phone Number"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="3dp"
+                android:src="@drawable/cancelicon"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/phoneBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="200dp"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:background="@drawable/gray_round_stroke"
+                    android:hint="+65 XXXX XXXX"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:gravity="start"/>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="SUBMIT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

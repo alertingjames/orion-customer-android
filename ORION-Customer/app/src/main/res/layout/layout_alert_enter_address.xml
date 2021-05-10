@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rect_fill">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_alert_header">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_loc"
+                android:tint="@color/white"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Add Address"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="3dp"
+                android:src="@drawable/cancelicon"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/gray_round_stroke">
+
+                    <EditText
+                        android:id="@+id/addressBox"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="200dp"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:hint="Full address..."
+                        android:background="@null"
+                        android:enabled="false"
+                        android:textColor="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_addr"
+                        android:drawablePadding="5dp"
+                        android:textSize="16sp"
+                        android:gravity="start"/>
+
+                    <ImageView
+                        android:id="@+id/btn_map"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:src="@drawable/downarrow"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/areaBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="200dp"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:background="@drawable/gray_round_stroke"
+                    android:hint="Area (city or state etc.)..."
+                    android:textColor="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_area_gray"
+                    android:drawablePadding="5dp"
+                    android:textSize="16sp"
+                    android:gravity="start"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/streetBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="200dp"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:background="@drawable/gray_round_stroke"
+                    android:hint="Street name..."
+                    android:textColor="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_street_gray"
+                    android:drawablePadding="5dp"
+                    android:textSize="16sp"
+                    android:gravity="start"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/houseBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="200dp"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:background="@drawable/gray_round_stroke"
+                    android:hint="House address..."
+                    android:textColor="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_house_gray"
+                    android:drawablePadding="5dp"
+                    android:textSize="16sp"
+                    android:gravity="start"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="SUBMIT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
